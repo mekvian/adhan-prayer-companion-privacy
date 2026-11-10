@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gizlilik Politikası ve Veri Silme - Ezan ve Dua Vakti (Adhan Prayer Companion)</title>
+  <style>
+    :root {
+      --bg: #F8FAF9;
+      --card-bg: #FFFFFF;
+      --text: #192426;
+      --text-muted: #536461;
+      --accent: #162B21;
+      --link: #245E55;
+      --border: #E1E8E5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0F1714;
+        --card-bg: #162420;
+        --text: #F3F7F5;
+        --text-muted: #A3B5AF;
+        --accent: #86EFAC;
+        --link: #5EEAD4;
+        --border: #243530;
+      }
+    }
+    body {
+      max-width: 820px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+      font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    nav {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 28px;
+      font-size: 15px;
+    }
+    nav a {
+      color: var(--link);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(36, 94, 85, 0.08);
+    }
+    nav a.active {
+      font-weight: 700;
+      background: var(--accent);
+      color: #FFFFFF;
+    }
+    @media (prefers-color-scheme: dark) {
+      nav a.active {
+        color: #0F1714;
+      }
+    }
+    h1 {
+      font-size: 2.1em;
+      line-height: 1.25;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.95em;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-size: 1.3em;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+    p, li {
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    a {
+      color: var(--link);
+    }
+    code {
+      background: rgba(0,0,0,0.06);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    footer {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9em;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Dil Seçimi">
+    <a href="index.html">English</a>
+    <a href="tr.html" class="active">Türkçe</a>
+    <a href="de.html">Deutsch</a>
+  </nav>
+
+  <header>
+    <h1>Gizlilik Politikası ve Veri Silme Beyanı</h1>
+    <div class="meta">
+      <strong>Uygulama:</strong> Adhan Prayer Companion (<code>com.aistudio.nurcompanion.vkmqzt</code>)<br>
+      <strong>Geliştirici / Tasarımcı:</strong> MEKVIAN<br>
+      <strong>İletişim:</strong> <a href="mailto:mekvian@proton.me">mekvian@proton.me</a><br>
+      <strong>Yürürlük Tarihi:</strong> 10 Kasım 2026
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Genel Bakış ve Kapsam</h2>
+      <p>
+        Bu Gizlilik Politikası, <strong>MEKVIAN</strong> tarafından geliştirilen <strong>Adhan Prayer Companion</strong> ("Uygulama") uygulamasının kullanıcı verilerini nasıl ele aldığını açıklamaktadır. Uygulama; astronomik hesaplamalara dayalı namaz vakitleri, Kıble pusulası, ezan vakti bildirimleri ve zikir/dua eşliği sunmaktadır.
+      </p>
+      <p>
+        Kişisel gizliliğinize son derece saygılıyız. Uygulamamız herhangi bir kullanıcı kaydı veya hesap açma zorunluluğu barındırmaz; tüm kişisel tercihler yalnızca cihazınızın yerel belleğinde saklanır.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Konum Bilgisi ve Geçici (Ephemeral) İşleme</h2>
+      <div class="highlight-card">
+        <strong>Temel Taahhüt:</strong> Cihaz konumunuz yalnızca astronomik namaz vakitlerini ve Kabe (Mekke) yönünü belirlemek amacıyla tamamen cihazınızda anlık olarak işlenir. Asla harici geliştirici sunucularına aktarılmaz veya kaydedilmez.
+      </div>
+      <p>Uygulama, konum izinlerini (<code>ACCESS_COARSE_LOCATION</code> ve <code>ACCESS_FINE_LOCATION</code>) yalnızca şu amaçlarla talep eder:</p>
+      <ul>
+        <li><strong>Namaz Vakitleri Hesaplaması:</strong> Coğrafi koordinatlarınıza göre güneş açıları ve imsak, güneş, öğle, ikindi, akşam, yatsı vakitlerinin hassas tespiti.</li>
+        <li><strong>Kıble Yönü:</strong> Bulunduğunuz noktadan Kabe'ye olan jeodezik açının ve pusula yönünün anlık hesaplanması.</li>
+      </ul>
+      <p>
+        Konum verisi bellekte geçici (ephemeral) olarak işlenir; üçüncü taraflara satılmaz veya paylaşılmaz. Dilerseniz GPS izni vermeden şehrinizi manuel olarak da seçebilirsiniz.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Reklam ve Gelir Modeli</h2>
+      <p>
+        Uygulamanın sürdürülebilirliğini sağlamak amacıyla reklam gösterimi yapılmaktadır. Reklamlar; ezan, ibadet ve manevi huzur atmosferine uygun, kullanıcıyı rahatsız etmeyecek şekilde seçilir.
+      </p>
+      <p>
+        Google AdMob gibi resmi reklam ortakları, Google Play Politikaları çerçevesinde reklam sahtekarlığını önleme ve frekans sınırlaması için standart Android Reklam Kimliği'ni (AAID) işleyebilir. İbadet veya dini tercihleriniz asla reklam ağlarıyla paylaşılmaz.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Kullanılan Cihaz İzinleri</h2>
+      <ul>
+        <li><strong>Konum:</strong> Namaz vakitleri ve Kıble pusulası için anlık yerel hesaplama.</li>
+        <li><strong>Bildirimler (POST_NOTIFICATIONS):</strong> Ezan vakti girdiğinde hatırlatma ve geri sayım bildirimi gönderme.</li>
+        <li><strong>Tam Zamanlı Alarmlar (SCHEDULE_EXACT_ALARM):</strong> Cihaz uyku (Doze) modundayken dahi ezan vaktini dakikası dakikasına çalabilme.</li>
+        <li><strong>Ön Plan Servisi (FOREGROUND_SERVICE_MEDIA_PLAYBACK):</strong> Ezan sesinin kesintisiz çalınabilmesi.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Veri Güvenliği ve İletim Sırasında Şifreleme</h2>
+      <p>
+        Uygulamanın gerçekleştirdiği tüm ağ bağlantıları endüstri standardı TLS/HTTPS şifrelemesi ile korunur. Ayarlar ve tercihler cihazınızın korumalı yerel SQLite veritabanında güvenle tutulur.
+      </p>
+    </section>
+
+    <section id="data-deletion">
+      <h2>6. Veri Saklama ve Veri Silme Talimatları</h2>
+      <div class="highlight-card">
+        <strong>Verilerinizi Nasıl Silebilirsiniz:</strong><br>
+        Uygulama sunucu tabanlı kullanıcı hesabı kullanmadığından, tüm veriler doğrudan kendi cihazınızdadır.
+      </div>
+      <p><strong>Yöntem A — Cihaz Üzerinden Anında Silme:</strong></p>
+      <ul>
+        <li>Cihazınızın <strong>Ayarlar</strong> &gt; <strong>Uygulamalar</strong> &gt; <strong>Adhan Prayer Companion</strong> bölümünü açın.</li>
+        <li><strong>Depolama ve Önbellek</strong> seçeneğine girip <strong>Depolama Alanını Temizle (Verileri Sil)</strong> butonuna basın. Tüm yerel ayarlarınız ve kayıtlarınız kalıcı olarak anında silinir.</li>
+        <li>Uygulamayı cihazınızdan kaldırmak da tüm verileri anında temizler.</li>
+      </ul>
+      <p><strong>Yöntem B — E-posta / Destek Kayıtlarının Silinmesi:</strong></p>
+      <p>
+        Geliştiriciye e-posta yoluyla ilettiğiniz herhangi bir destek veya geri bildirim yazışmasının silinmesini talep etmek için <a href="mailto:mekvian@proton.me?subject=Veri%20Silme%20Talebi%20-%20Adhan%20Prayer%20Companion">mekvian@proton.me</a> adresine <em>"Veri Silme Talebi - Adhan Prayer Companion"</em> konulu bir e-posta gönderebilirsiniz. Talebiniz en geç 30 gün içinde incelenerek tüm kayıtlar kalıcı olarak imha edilir.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Çocukların Gizliliği</h2>
+      <p>
+        Uygulama genel kitleye (18 yaş ve üzeri) yöneliktir. 13 yaş altındaki çocuklardan bilerek herhangi bir kişisel veri toplanmaz.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Politika Değişiklikleri</h2>
+      <p>
+        Gizlilik politikamızda yapılabilecek güncellemeler bu sayfada yeni yürürlük tarihi ile birlikte yayınlanacaktır.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. İletişim</h2>
+      <p>
+        Gizlilik politikası veya veri silme taleplerinizle ilgili her türlü soru için:
+      </p>
+      <p>
+        <strong>Geliştirici:</strong> MEKVIAN<br>
+        <strong>E-posta:</strong> <a href="mailto:mekvian@proton.me">mekvian@proton.me</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/mekvian" target="_blank" rel="noopener">https://github.com/mekvian</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 MEKVIAN. Tüm hakları saklıdır. &bull; Adhan Prayer Companion
+  </footer>
+</body>
+</html>
