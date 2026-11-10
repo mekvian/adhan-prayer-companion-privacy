@@ -1,6 +1,6 @@
 # Adhan Prayer Companion - Privacy Policy & Data Deletion
 
-Public privacy policy and user data deletion notices for the **Adhan Prayer Companion** Android application (`com.aistudio.nurcompanion.vkmqzt`) by **MEKVIAN**.
+Public privacy policy and user data deletion notices for the **Adhan Prayer Companion** Android application (`com.mekvian.nurcompanion`) by **MEKVIAN**.
 
 - **English**: [index.html](https://mekvian.github.io/adhan-prayer-companion-privacy/)
 - **Türkçe**: [tr.html](https://mekvian.github.io/adhan-prayer-companion-privacy/tr.html)
